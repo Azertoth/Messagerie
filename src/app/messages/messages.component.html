@@ -1,0 +1,9 @@
+<div *ngIf="tabMessage.length !== 0">
+  <fieldset *ngFor="let chaqueMessage of tabMessage">
+    <p>Par <a href="#">{{chaqueMessage.auteur.pseudo}}</a>, le {{chaqueMessage.dateMessage}} </p>
+    <input type="text" [value]="chaqueMessage.textMessage">
+  </fieldset>
+ </div>
+<div *ngIf="tabMessage.length === 0">
+  <p>Aucun message</p>
+</div>

@@ -1,0 +1,22 @@
+.div {
+  height: 100px;
+}
+h2 {
+  font-weight: bolder;
+}
+.de {
+  height: 10%;
+  width: 95%;
+  margin : 10px;
+}
+.button{
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  margin: 5px;
+}
+.message {
+  height: 50px;
+  width: 95%;
+  margin : 10px;
+}

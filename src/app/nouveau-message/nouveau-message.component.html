@@ -1,0 +1,15 @@
+<div class="div">
+  <form (ngSubmit)="envoyer(monForm.value)" #monForm="ngForm">
+    <h2>Nouveau message :</h2>
+    <div >
+    <p>de :</p>
+    <input type="text" class="de" name="nom" ngModel required="required"/>
+      <p>message :</p>
+      <textarea type="text" name="textMessage" class="message" ngModel required="required"></textarea>
+    </div>
+    <div class="button">
+    <input type="submit" value="Valider">
+    <input type="submit" value="Annuler" (click)="annuler(monForm.value)">
+    </div>
+  </form>
+</div>

@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  padding: 60px 45px 30px;
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 50% 30%;
+  gap: 1px 1px;
+  grid-template-areas:
+    "titre titre titre"
+    "menu messages messages"
+    "menu nouveau-message nouveau-message";
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 4px;
+  background-color: RGBA(138,122,163,0.91);
+  height: 100%;
+}
+
+app-titre {
+  grid-area: titre;
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+app-menu {
+  background-color: RGBA(138,122,163,0.37);
+  grid-area: menu;
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+app-messages {
+  background-color: RGBA(138,122,163,0.37);
+  grid-area: messages;
+  /*display: flex;
+  flex-direction: column;*/
+  overflow-y: scroll;
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 4px;
+  align-items: center;
+  height: 400px;
+}
+
+app-nouveau-message {
+  background-color: RGBA(138,122,163,0.37);
+  grid-area: nouveau-message;
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
